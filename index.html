@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wleeee</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: pink;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex; /* Mengaktifkan Flexbox pada body */
+            justify-content: center; /* Memusatkan secara horizontal */
+            align-items: center; /* Memusatkan secara vertikal */
+            min-height: 100vh; /* Tinggi minimal body sama dengan tinggi viewport */
+        }
+
+        section {
+            background-color: #ffffff;
+            width: 80%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            position: relative; /* Menjadikan section sebagai referensi untuk posisi absolut */
+            border-radius: 25px;
+        }
+
+        .slide {
+            display: none; /* Semua slide disembunyikan */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide.active {
+            display: flex; /* Menampilkan slide yang memiliki kelas 'active' */
+        }
+
+        .next {
+            position: absolute; /* Menggunakan posisi absolut untuk tombol */
+            right: 20px; /* Jarak dari kanan */
+            bottom: 20px; /* Jarak dari bawah */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 7px;
+            background-color: #8dccf3;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="slide active" id="slide-1">
+            <h1>haiii sayang<br></h1>
+            <button class="next">next</button>
+        </div>
+        <div class="slide" id="slide-2">
+            <h2>selamat malam</h2>
+            <img src="tata1.jpg" alt="" style="width: 200px;" height="210px">
+            <p>dibaca pelan pelan aja ya sayangg</p>
+            <button class="next">next</button>
+        </div>
+        <div class="slide" id="slide-3">
+            <p> selamat istirahat yaaa klo hari ini buruk atau kurang bagus gapapa, smoga besok jadi hari yg menyenangkan 
+                buat kamu, klo kamu bener bener cape sama hari ini istirahat aja yaa udah malem juga ga baik bergadang
+                mulu. semangat terus ya sayangku cintakuu, i hope u sleep well n sweet dreams, i love uuuu
+            </p>
+            <button class="next">next</button>
+        </div>
+        <div class="slide" id="slide-4">
+            <h2>jangan cape yaa bacany soalny masih ada banyak hehe</h2>
+            <button class="next">next</button>
+        </div>
+        <div class="slide" id="slide-5">
+            <p>aku aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen 
+                aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen aku kangen</p><br>
+                <h1></h1>
+        </div>
+    </section>
+    
+    <script>
+        let slides = document.querySelectorAll('.slide'); 
+        let currentSlide = 0; 
+        let nextButtons = document.querySelectorAll('.next');
+
+        nextButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                slides[currentSlide].classList.remove('active');
+                
+                currentSlide = (currentSlide + 1) % slides.length; 
+                slides[currentSlide].classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
